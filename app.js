@@ -20,7 +20,7 @@ window.addEventListener('load', ()=> {
            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=04825f9813c6ee84acd54c94ea7a6ed2`
 
            //ubicación por ciudad
-           //const url = `https://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=04825f9813c6ee84acd54c94ea7a6ed2`
+           //const url = `https://api.openweathermap.org/data/2.5/weather?q=Encarnacion&lang=es&units=metric&appid=04825f9813c6ee84acd54c94ea7a6ed2`
 
            //console.log(url)
 
@@ -31,7 +31,7 @@ window.addEventListener('load', ()=> {
                 
                 let temp = Math.round(data.main.temp)
                 //console.log(temp)
-                temperaturaValor.textContent = `${temp} ° C`
+                temperaturaValor.textContent = `${temp - 272} ° C`
 
                 //console.log(data.weather[0].description)
                 let desc = data.weather[0].description
